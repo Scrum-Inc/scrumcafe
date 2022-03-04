@@ -8,6 +8,9 @@ const Item = ({ item, onClick, disabled }) => {
 			<Col>
 				<Styled.Name>{item.name}</Styled.Name>
 				<Styled.Description>{item.description}</Styled.Description>
+				{item.customizations?.map((customization) => {
+					<Styled.Name>{customization.customizationDesc}</Styled.Name>;
+				})}
 			</Col>
 			<Col sm="auto">
 				<Button onClick={() => onClick(item)} disabled={disabled}>
