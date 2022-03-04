@@ -7,6 +7,10 @@ import Item from "./Item";
 const Menu = ({ handleAdd, checkingOut }) => {
 	const [menuItems, setMenuItems] = useState([]);
 
+	const toggleCheckboxOption = (e) => {
+		console.log(e)
+	}
+
 	useEffect(() => {
 		fetch("/menu")
 			.then((res) => res.json())
@@ -19,7 +23,7 @@ const Menu = ({ handleAdd, checkingOut }) => {
 				<h4>Menu</h4>
 			</Row>
 			{menuItems.map((menuItem) => (
-				<Item key={menuItem.id} item={menuItem} onClick={handleAdd} disabled={checkingOut} />
+				<Item key={menuItem.id} item={menuItem} onClick={handleAdd} disabled={checkingOut} toggleCheckboxOption={toggleCheckboxOption} />
 			))}
 		</Col>
 	);
