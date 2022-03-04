@@ -1,29 +1,44 @@
 {
-  "menuItems": [
-    {
-      "id": 1,
-      "name": "Garden salad (300 cal)",
-      "description": "Cherry tomatoes, cucumber slices, and julienne carrots on a bed of mixed greens with a light poppy seed dressing."
-    },
-    {
-      "id": 2,
-      "name": "Avocado toast (500 cal)",
-      "description": "Fresh avocado spread on a perfectly toasted slice of whole wheat bread."
-    },
-    {
-      "id": 3,
-      "name": "Hummus with pita chips (350 cal)",
-      "description": "Garlic roasted hummus served with lightly salted pita chips."
-    }
-  ],
-  "orders": {
-    "items": [
-      {
-        "id": 3,
-        "name": "Hummus with pita chips (350 cal)",
-        "description": "Garlic roasted hummus served with lightly salted pita chips.",
-        "qty": 3
-      }
-    ]
-  }
+	"menuItems": [
+		{
+			"id": 1,
+			"name": "Garden salad (300 cal)",
+			"description": "Cherry tomatoes, cucumber slices, and julienne carrots on a bed of mixed greens with a light poppy seed dressing.",
+			"options": [
+				{ "selected": true, "itemName": "cherryTomatoes", "label": "Cherry Tomatoes" },
+				{ "selected": true, "itemName": "cucumberSlices", "label": "Cucumber Slices" },
+				{ "selected": true, "itemName": "julienneCarrots", "label": "Julienne Carrots" },
+				{ "selected": false, "itemName": "croutons", "label": "Croutons" },
+				{ "selected": false, "itemName": "avocado", "label": "Avocado" }
+			]
+		},
+		{
+			"id": 2,
+			"name": "Avocado toast (500 cal)",
+			"description": "Fresh avocado spread on a perfectly toasted slice of whole wheat bread.",
+			"options": [
+				{ "selected": false, "itemName": "egg", "label": "Egg" },
+				{ "selected": false, "itemName": "cherryTomatoes", "label": "Cherry Tomatoes" }
+			]
+		},
+		{
+			"id": 3,
+			"name": "Hummus with pita chips (350 cal)",
+			"description": "Garlic roasted hummus served with lightly salted pita chips.",
+			"options": [
+				{ "selected": true, "itemName": "oliveOil", "label": "Olive Oil" },
+				{ "selected": false, "itemName": "capers", "label": "Capers" }
+			]
+		}
+	],
+	"orders": {
+		"items": [
+			{
+				"id": 3,
+				"name": "Hummus with pita chips (350 cal)",
+				"description": "Garlic roasted hummus served with lightly salted pita chips.",
+				"qty": 3
+			}
+		]
+	}
 }
