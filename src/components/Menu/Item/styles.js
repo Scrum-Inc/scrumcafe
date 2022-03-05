@@ -8,6 +8,12 @@ const Styled = {
 		margin: 1rem 0;
 		padding: 1rem;
 	`,
+	Customization: styled(Row)`
+		border: 1px solid #cdcdcd;
+		border-radius: 3px;
+		margin: 1rem 0;
+		padding: 1rem;
+	`,
 	Name: styled(Row)`
 		font-weight: bold;
 	`,
